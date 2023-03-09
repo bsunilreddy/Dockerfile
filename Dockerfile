@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM amazonlinux
 RUN yum install java -y
 RUN yum install git -y
 RUN mkdir /opt/tomcat
