@@ -1,4 +1,4 @@
-FROM amazonlinux
+FROM nginx:latest
 RUN yum install java -y
 RUN yum install git -y
 RUN mkdir /opt/tomcat
