@@ -1,7 +1,7 @@
-FROM ubuntu
 RUN apt update -y
-RUN apt install java-1.8.0-openjdk -y
-RUN apt install git -y
+RUN apt install apache2 -y
+RUN apt install mysql-server -y
+RUN apt install default-jre default-jdk -y
 RUN mkdir /opt/tomcat
 WORKDIR opt/tomcat
 ADD https://downloads.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz.asct .
