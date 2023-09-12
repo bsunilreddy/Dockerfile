@@ -1,4 +1,4 @@
-FROM amazonlinux
+FROM centos:latest
 RUN yum update -y
 RUN yum install java-1.8.0-openjdk -y
 RUN yum install git -y
